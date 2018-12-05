@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <link href="newcss.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>
+        <div>
+        <h1>Hello World!</h1>
+         <img src="nemt.jpg" width="580" height="280"/>
+         </div>
+       
+         <a href="ansers.html">Answers for question 1-15<br></a>
+         <div> Monitoring HTTP Headers 1 <br>
+        There is the Status tab whihc give the current status of the response in this case OK. <br>
+        Then there is time which indicates the time needed to load. <br> <br>
+        </div>
+        <div> Monitoring HTTP Headers 2 <br>
+        <img src="Capture.PNG" width="340" height="100"/> <br>  
+        The purpose of connection header is to control whether the connection stays open after transaction. If the value is “keep-alive” it will keep the connection open 
+        <br> <br>
+        </div>
+        
+        <div> Monitoring HTTP Headers 3 <br>
+        <img src="r.PNG" width="340" height="100"/> <br> 
+        <img src="redirect.PNG" width="340" height="100"/> <br>  
+       The status code 302 tell the client that the URI has been found and changed on the server side and instead of loading the redirect uri it should attempt to load the r.html uri. <br>
+       You can see the location that the client should got to in the response header of the redirect.
+
+        <br> <br>
+        </div>
+         <a href="r.html">link to question 3<br></a>
+         <a href="redirect">link to question 3 through redirect<br></a>
+         
+         <div> Redirecting to https instead of http <br> 
+        The first request is to studypoints HTTP which then get a 307 message back which redirect to the HTTPS version of the site.  <br>
+        The second is the call to the https version which is a success and gets code 200.
+        <br> <br>
+        </div> 
+         
+         <div> Status Codes (5xx) 
+             <br> 
+            500
+        <br> <br>
+        </div> 
+         
+             
+         <div> Status Codes (4xx) 
+             <br> 
+            404
+        <br> <br>
+        </div> 
+         
+         <div> Status Codes - Ranges
+             <br> 
+            200: Is the successful response range, this is where the server answers back with a success even if there isn’t content or just partial content. <br>
+            300: These are the redirect codes, these can indicate where the new site is and whether or not it is permanent . <br>
+            400:these are client side errors such as the classic 404 which is a request for a page that do not exist. <br>
+            500: are server side errors. For instance the previous attempt  to divide a 100 with 0 in the code <br>
+
+        <br> <br>
+        </div> 
+         
+          <div> Get HTTP Request Headers on the Server
+             <br> 
+             <img src="123p.PNG" width="340" height="100"/> <br> 
+
+        <br> <br>
+        </div> 
+         
+         <div> Get/Post-parameters
+             <br> 
+             
+             When I use the form with the “get” the address is extended by the information in the form. In this case: ?firstName=First+Name&lastName=Last+Name&hidden=12345678#.      <br> 
+              When I use the form with then “post” the address is extended only with the attribute of the form in this case: #
+      <br> 
+            The first case is send as a query string parameter and the second in form data. While this appears different in the browser, the actual information send is the same      <br> 
+        
+             <img src="Udklip.PNG" width="340" height="100"/> <br> 
+             <img src="Udklip (2).PNG" width="340" height="100"/> <br> 
+
+        <br> <br>
+        </div> 
+         <a href="getPost.html">link text<br></a>
+        
+         
+         <div>  Sessions (Session Cookies) 
+             <br> 
+             The server maintains a “state” by utilizing cookies. When a request is send the server can send back the data for a cookie, in the form of set-cookie. <br>
+             The browser than create this cookie and the next time it contacts the server it will send the cookie as well. <br>
+             Then the server know what info to utilize and can also change the information within the cookie or delete it. Or simply create more cookies.<br>
+
+               Im sorry but I don't know what images to add to this.
+
+
+        <br> <br>
+        </div> 
+         <a href="SessionDemo">link to the sessionDemo Servlet<br></a>
+         
+         
+           <div>  Persistent Cookies
+             <br> 
+             Persistent cookies assist us in maintaining state due to the fact that their life span can be as however long or short the creator wishes it to be.<br>
+             Also it does not seize to exist when the browser is terminated.<br>
+             
+            This allows us for instance  to track data of the user over longer periods of time and many visits as the Cookie would always be the same whereas the session cookie would be a new one every time they close their browser
+        <br> <br>
+        </div> 
+         <a href="CookieDemo">link to the cookieDemo Servlet<br></a>
+         <br>
+         <a href="Plain">Answers to Nginx and Certificate<br></a>
+         <br>
+         <a href="CA-1/indexCA.html">Link to ca 1<br></a>
+    </body>
+</html>
